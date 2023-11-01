@@ -2,13 +2,15 @@
 <head>
 <title>Experiments with CSS</title>
 <style type='text/css'> /* These styles will remove all padding and margins on h1, h2 and p elements, and make the headings red. */
-
+    p:first-of-type {
+  font: 0.17em/1.33 Verdana, sans-serif;
+    }
    h1, h2, p {
       padding: 0;
       margin: 0;
       font: 1em/1.33 Verdana, sans-serif;
    }
-
+   h1, h2 {margin: 10pt 0 2pt 0;}
    h1, h2 {
       color: red;
    }
