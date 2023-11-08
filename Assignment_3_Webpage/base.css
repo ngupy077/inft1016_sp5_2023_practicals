@@ -1,0 +1,51 @@
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" title="Basic" />
+    p:first-of-type {
+  font: 0.23em/1.33 Times New Roman, sans-serif;
+    }
+   h1, h2, p {
+      padding: 0;
+      margin: 0;
+      font: 2em/2.66 Times New Roman, sans-serif;
+   }
+   h1, h2 {margin: 0.83em 0 0.17em 0; }
+   h1, h2 {
+      color: rgb(255, 0, 0);
+   }
+   h1 {font-size: 1.33em;}
+    h2 {font-size: 1.17em;}
+   p {margin: 0 0 0.5em 0;}
+   p + p {text-indent: 5em;}
+   div#wrapper {  
+     width: 100px;  
+    }  
+    div#banner{  
+        margin-left: 10px;  
+        margin-right: 10px;  
+        padding-left: 10px;  
+        padding-right: 10px;  
+        border-left: 1px solid black;  
+        border-right: 1px solid black;  
+        width: 30px;
+    }
+    body {  
+        background: rgb(61, 69, 67) url(image.gif) repeat fixed top left;  
+    }
+  /* this selects p tags preceded by a p tag --
+     that is, not the first p tag */
+    :root
+    -- base-font-color         131 148 150
+    -- secondary-font-color    88 110 117 
+    -- emphasised-font         147 161 161
+
+    -- c-background-color      0  43  54
+    -- c-background-highlights 7  54  66
+
+    -- c-yellow      181 137   0 
+    -- c-orange      203  75  22  
+    -- c-red         220  50  47  
+    -- c-magenta     211  54 130 
+    -- c-violet      108 113 196 
+    -- c-blue        38 139 210 
+    -- c-cyan        42 161 152 
+    -- c-green       133 153   0 
+</style>
