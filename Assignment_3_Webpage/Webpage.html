@@ -3,18 +3,100 @@
     <meta charset="utf-8">
     <head><title>Webpage</title>
         <link rel="stylesheet" href="base.css">
+        <script>
+            function loading(){
+                document.getElementById('image1').style.display = 'block';
+                document.getElementById('image2').style.display = 'none';
+                document.getElementById('image3').style.display = 'none'
+                document.getElementById('image4').style.display = 'none';
+                document.getElementById('image5').style.display = 'none';
+            }
+            function button1(){
+                document.getElementById('image1').style.display = 'block';
+                document.getElementById('image2').style.display = 'none';
+                document.getElementById('image3').style.display = 'none'
+                document.getElementById('image4').style.display = 'none';
+                document.getElementById('image5').style.display = 'none';
+            }
+            function button2(){
+                document.getElementById('image1').style.display = 'none';
+                document.getElementById('image2').style.display = 'block';
+                document.getElementById('image3').style.display = 'none'
+                document.getElementById('image4').style.display = 'none';
+                document.getElementById('image5').style.display = 'none';
+            }
+            function button3(){
+                document.getElementById('image1').style.display = 'none';
+                document.getElementById('image2').style.display = 'none';
+                document.getElementById('image3').style.display = 'block'
+                document.getElementById('image4').style.display = 'none';
+                document.getElementById('image5').style.display = 'none';
+            }
+            function button4(){
+                document.getElementById('image1').style.display = 'none';
+                document.getElementById('image2').style.display = 'none';
+                document.getElementById('image3').style.display = 'none'
+                document.getElementById('image4').style.display = 'block';
+                document.getElementById('image5').style.display = 'none';
+            }
+            function button5(){
+                document.getElementById('image1').style.display = 'none';
+                document.getElementById('image2').style.display = 'none';
+                document.getElementById('image3').style.display = 'none'
+                document.getElementById('image4').style.display = 'none';
+                document.getElementById('image5').style.display = 'block';
+            }
+        </script>
     </head>
     <body>
         <header>
             <h1 style="color: rgb(255, 128, 0); font: 2em/2.66 Times New Roman, sans-serif; text-align: center">Quantum computer and some of its uses<h1 style= "text-align: center"></h1>
             <!-- Button to change the theme -->
-            <button onclick="">Change Theme</button>
-            <form>
-                <input type="text" name="user_name" placeholder="Enter your name!">
-                <button type="submit">Apply!</button>
-              </form>
+            <button onclick="">Toggle Theme</button>
+            <nav>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Our team</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <form>
+                  <input type="text" name="user_name" placeholder="Enter your name!">
+                  <button type="submit">Apply!</button>
+                </form>
+            </nav>
         </header>
-        <p><img src="https://caltechsites-prod.s3.amazonaws.com/scienceexchange/images/CSE-QuantumComputing-Header-W.2e16d0ba.fill-933x525-c100.jpg" title="Quantum computer" border="0" align="center" height="150" width="300"/></p>  
+        
+        <button id='button1'>
+            <button onclick="button1()">Quantum computer
+                <button style= "text-align: left"></button>
+        </button>
+        <button id='button2'>
+            <button onclick="button2()">Quantum AI
+                <button style= "text-align: left"></button>
+        </button>
+        <button id="button3">
+            <button onclick="button3()">Quantum bits
+                <button style= "text-align: left"></button>
+        </button>
+        <button id='button4'>
+            <button onclick="button4()">Encryption
+                <button style= "text-align: left"></button>
+        </button>
+        <button id="button5">
+            <button onclick="button5()">Quantum physics
+                <button style= "text-align: left"></button>
+        </button>
+        <img id="image1"
+            src="https://caltechsites-prod.s3.amazonaws.com/scienceexchange/images/CSE-QuantumComputing-Header-W.2e16d0ba.fill-933x525-c100.jpg" border="0" align="center" height="100" width="200">
+        <img id="image2"
+            src="https://edgy.app/wp-content/uploads/2020/01/quantum-ai.jpg" border="0" align="center" height="100" width="200">
+        <img id="image3"
+            src="https://i.pinimg.com/736x/5b/77/4b/5b774b87db5b413f3e03cea8b7c0cb08.jpg" border="0" align="center" height="100" width="200">
+        <img id="image4"
+            src="https://media.wired.co.uk/photos/606da03e687a704c2c3617da/16:9/w_2560%2Cc_limit/encryption_1.jpg" border="0" align="center" height="100" width="200">
+        <img id="image5"
+            src="https://images.squarespace-cdn.com/content/v1/598cec59bebafb055b9891d8/1573746798763-2FM2CM0P7RYM8A2B7RDB/quantum-physics.jpg?format=1500w" border="0" align="center" height="100" width="200">
         <main>
             <!-- The article heaading -->
             <article>
@@ -43,13 +125,18 @@
                     </p>
              </article>
              <aside>
-                <h2>Related information</h2>
+                <h2 style="color: rgb(203, 134, 50); text-align: left; font: 1.2em/1.2 Times New Roman, sans-serif">Related information</h2>
                 <ul>
-                  <li><a href="https://medium.com/@iyshownmorriah/quantum-computing-in-a-nutshell-3b816b873c05">Quantum computing in a nutshell</a></li>
-                  <li><a href="https://ts2.space/en/quantum-computing-and-virtual-reality-creating-new-worlds-with-quantum-algorithms/">Quantum computer use in VR</a></li>
-                  <li><a href="https://www.einfochips.com/blog/quantum-computing-in-artificial-intelligence-around-the-corner/">AI and Quantum computing - Quantum AI</a></li>
-                  <li><a href="https://www.wired.com/story/how-to-build-a-pc/">All you need to build your own PC at home</a></li>
-                  <li><a href="https://www.youtube.com/watch?v=PXaLc9AYIcg">A quick guide on how to build your own computer(PC)</a></li>
+                  <li style="color: rgb(255, 255, 255); text-align: left; font: 1em/1 Times New Roman, sans-serif"><a style="color: rgb(206, 212, 96); text-align: left; font: 1em/1 Times New Roman, sans-serif" 
+                    href="https://medium.com/@iyshownmorriah/quantum-computing-in-a-nutshell-3b816b873c05">Quantum computing in a nutshell</a></li>
+                  <li style="color: rgb(255, 255, 255); text-align: left; font: 1em/1 Times New Roman, sans-serif"><a style="color: rgb(206, 212, 96); text-align: left; font: 1em/1 Times New Roman, sans-serif" 
+                    href="https://ts2.space/en/quantum-computing-and-virtual-reality-creating-new-worlds-with-quantum-algorithms/">Quantum computer use in VR</a></li>
+                  <li style="color: rgb(255, 255, 255); text-align: left; font: 1em/1 Times New Roman, sans-serif"><a style="color: rgb(206, 212, 96); text-align: left; font: 1em/1 Times New Roman, sans-serif" 
+                    href="https://www.einfochips.com/blog/quantum-computing-in-artificial-intelligence-around-the-corner/">AI and Quantum computing - Quantum AI</a></li>
+                  <li style="color: rgb(255, 255, 255); text-align: left; font: 1em/1 Times New Roman, sans-serif"><a style="color: rgb(206, 212, 96); text-align: left; font: 1em/1 Times New Roman, sans-serif" 
+                    href="https://www.wired.com/story/how-to-build-a-pc/">All you need to build your own PC at home</a></li>
+                  <li style="color: rgb(255, 255, 255); text-align: left; font: 1em/1 Times New Roman, sans-serif"><a style="color: rgb(206, 212, 96); text-align: left; font: 1em/1 Times New Roman, sans-serif" 
+                    href="https://www.youtube.com/watch?v=PXaLc9AYIcg">A quick guide on how to build your own computer(PC)</a></li>
                 </ul>
             </aside>
   
