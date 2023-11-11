@@ -4,47 +4,37 @@
     <head><title>Webpage</title>
         <link rel="stylesheet" href="base.css">
         <script>
-            function loading(){
-                document.getElementById('image1').style.display = 'block';
-                document.getElementById('image2').style.display = 'none';
-                document.getElementById('image3').style.display = 'none'
-                document.getElementById('image4').style.display = 'none';
-                document.getElementById('image5').style.display = 'none';
-            }
-            function button1(){
-                document.getElementById('image1').style.display = 'block';
-                document.getElementById('image2').style.display = 'none';
-                document.getElementById('image3').style.display = 'none'
-                document.getElementById('image4').style.display = 'none';
-                document.getElementById('image5').style.display = 'none';
-            }
-            function button2(){
+            function hideAll() {
                 document.getElementById('image1').style.display = 'none';
+                document.getElementById('image2').style.display = 'none';
+                document.getElementById('image3').style.display = 'none';
+                document.getElementById('image4').style.display = 'none';
+                document.getElementById('image5').style.display = 'none';
+            }
+            function button1() {
+                hideAll();
+                document.getElementById('image1').style.display = 'block';
+                document.getElementById('text').innerText = 'A quantum computer on Caltech. For more information please visit:'
+            }
+            function button2() {
+                hideAll();
                 document.getElementById('image2').style.display = 'block';
-                document.getElementById('image3').style.display = 'none'
-                document.getElementById('image4').style.display = 'none';
-                document.getElementById('image5').style.display = 'none';
+                document.getElementById('text').innerText = 'A quantum AI by Zayan Guedim on edgy.app. For more information please visit:'
             }
-            function button3(){
-                document.getElementById('image1').style.display = 'none';
-                document.getElementById('image2').style.display = 'none';
-                document.getElementById('image3').style.display = 'block'
-                document.getElementById('image4').style.display = 'none';
-                document.getElementById('image5').style.display = 'none';
+            function button3() {
+                hideAll();
+                document.getElementById('image3').style.display = 'block';
+                document.getElementById('text').innerText = 'A quantum bit (qubit) model. For more information please visit:'
             }
-            function button4(){
-                document.getElementById('image1').style.display = 'none';
-                document.getElementById('image2').style.display = 'none';
-                document.getElementById('image3').style.display = 'none'
+            function button4() {
+                hideAll();
                 document.getElementById('image4').style.display = 'block';
-                document.getElementById('image5').style.display = 'none';
+                document.getElementById('text').innerText = 'An encryption image. For more information please visit:'
             }
-            function button5(){
-                document.getElementById('image1').style.display = 'none';
-                document.getElementById('image2').style.display = 'none';
-                document.getElementById('image3').style.display = 'none'
-                document.getElementById('image4').style.display = 'none';
+            function button5() {
+                hideAll();
                 document.getElementById('image5').style.display = 'block';
+                document.getElementById('text').innerText = 'Quantum physics on scienceswitch.com. For more information please visit:'
             }
         </script>
     </head>
@@ -66,37 +56,21 @@
                 </form>
             </nav>
         </header>
-        
-        <button id='button1'>
-            <button onclick="button1()">Quantum computer
-                <button style= "text-align: left"></button>
-        </button>
-        <button id='button2'>
-            <button onclick="button2()">Quantum AI
-                <button style= "text-align: left"></button>
-        </button>
-        <button id="button3">
-            <button onclick="button3()">Quantum bits
-                <button style= "text-align: left"></button>
-        </button>
-        <button id='button4'>
-            <button onclick="button4()">Encryption
-                <button style= "text-align: left"></button>
-        </button>
-        <button id="button5">
-            <button onclick="button5()">Quantum physics
-                <button style= "text-align: left"></button>
-        </button>
-        <img id="image1"
-            src="https://caltechsites-prod.s3.amazonaws.com/scienceexchange/images/CSE-QuantumComputing-Header-W.2e16d0ba.fill-933x525-c100.jpg" border="0" align="center" height="100" width="200">
-        <img id="image2"
-            src="https://edgy.app/wp-content/uploads/2020/01/quantum-ai.jpg" border="0" align="center" height="100" width="200">
-        <img id="image3"
-            src="https://i.pinimg.com/736x/5b/77/4b/5b774b87db5b413f3e03cea8b7c0cb08.jpg" border="0" align="center" height="100" width="200">
-        <img id="image4"
-            src="https://media.wired.co.uk/photos/606da03e687a704c2c3617da/16:9/w_2560%2Cc_limit/encryption_1.jpg" border="0" align="center" height="100" width="200">
-        <img id="image5"
-            src="https://images.squarespace-cdn.com/content/v1/598cec59bebafb055b9891d8/1573746798763-2FM2CM0P7RYM8A2B7RDB/quantum-physics.jpg?format=1500w" border="0" align="center" height="100" width="200">
+        <div>
+            <button onclick="button1()">Quantum computer</button>
+            <button onclick="button2()">Quantum AI</button>
+            <button onclick="button3()">Quantum bits</button>
+            <button onclick="button4()">Encryption</button>
+            <button onclick="button5()">Quantum physics</button>
+        </div>
+
+        <div>
+            <img id="image1" src="https://caltechsites-prod.s3.amazonaws.com/scienceexchange/images/CSE-QuantumComputing-Header-W.2e16d0ba.fill-933x525-c100.jpg" border="0" align="center" height="100" width="200">
+            <img id="image2" src="https://edgy.app/wp-content/uploads/2020/01/quantum-ai.jpg" border="0" align="center" height="100" width="200">
+            <img id="image3" src="https://i.pinimg.com/736x/5b/77/4b/5b774b87db5b413f3e03cea8b7c0cb08.jpg" border="0" align="center" height="100" width="200">
+            <img id="image4" src="https://media.wired.co.uk/photos/606da03e687a704c2c3617da/16:9/w_2560%2Cc_limit/encryption_1.jpg" border="0" align="center" height="100" width="200">
+            <img id="image5" src="https://images.squarespace-cdn.com/content/v1/598cec59bebafb055b9891d8/1573746798763-2FM2CM0P7RYM8A2B7RDB/quantum-physics.jpg?format=1500w" border="0" align="center" height="100" width="200">
+        </div>
         <main>
             <!-- The article heaading -->
             <article>
