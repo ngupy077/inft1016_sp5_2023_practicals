@@ -1,108 +1,37 @@
 
 
-Phan Quoc Anh Nguyen
-# This is a large heading. 
+Name: Phan Quoc Anh Nguyen
+Student ID: 110407360
+INFT 1016
+
+# Quantum computer and quantum computing webpage
 
 
 
-This is a paragraph. Text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**This page is going to explain about the concept of quantum computing and quantum computer, along with some features including interactive buttons with some images, together with related websites for more information.**
 
-## This is a medium heading. 
-
-
-
-This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### This is a small heading.
+## Contents in the webpage
 
 
+<ol>
+  <li>Theme button</li>
+  <li>About quantum computers</li>
+  <li>Some images</li>
+  <li>Related links</li>
+</ol>
 
-This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### Other materials.
 
-# This is a large heading.
-
-
-
-_This text is italic._
-
-
-
-**This text is bold.**
-
-
-
-***This text is bold and italic!***
+<ul>
+  <li>Enter name placeholder</li>
+</ul>
 
 
+### Missing(uncompleted features):
+<ul>
+  <li>Enter name placeholder cannot store the information</li>
+  <li>Date and time</li>
+  <li>Description for the images</li>
+  <li>Toggle theme button only change once</li>
+</ul>
 
-# This is a large heading.
-
-
-
-Here's an unordered list, with:
-
-One item
-
-Two item
-
-Three item
-
-Sub-item one!
-
-Sub-item two!
-
-
-
-# This is a large heading.
-
-
-
-Here's an ordered list, with:
-
-Item one
-
-Item two
-
-Item three
-
-Item three-A
-
-Item three-B
-
-
-> This is a block quote. It should be in block quotes! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-
-# This is a large heading.
-
-
-
-`Inline code: make this word inline.`
-
-# This is a large heading.
-
-
-Format this text as code. 
-```
-{def foo():
-    if not bar:
-        return True
-}
-```
-
- 
-
-![humanoid robot](https://upload.wikimedia.org/wikipedia/commons/0/03/Kismet-IMG_6007-black.jpg)
-
-'https://upload.wikimedia.org/wikipedia/commons/0/03/Kismet-IMG_6007-black.jpg'
-
-
-|Number     |   Color   |       Size|
-|       ---:|:---       |   :---:   |
-|Three      |    Red    |        Big|
-
-```
-def my_function():
-    print("Hello from a function")
-```
