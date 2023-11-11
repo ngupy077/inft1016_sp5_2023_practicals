@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" title="Basic" />
+
     p:first-of-type {
   font: 0.23em/1.33 Times New Roman, sans-serif;
     }
@@ -28,15 +28,23 @@
         width: 30px;
     }
     body {  
-        background: rgb(27, 28, 28) url(image.gif) repeat fixed top left;  
-    }
-  /* this selects p tags preceded by a p tag --
-     that is, not the first p tag */
-     :root {
-      --primary-color: rgb(255, 255, 255);
-  }
+        background: rgb(0, 0, 0) url(image.gif) repeat fixed top left;  
+      }
+     :root 
+        [data-theme="light"]{
+          --primary-color: rgb(255, 255, 255);
+          --secondary-color: rgb(201, 191, 191);
+          --bg-color: rgb(255, 255, 255);
+          --font-color: rgb(0,0,0);
+          --heading-color: rgb(0,0,0);
+
+          }
   
-  [data-theme="dark"] {
-       --primary-color: rgb(0, 0, 0);
-   }
-</style>
+        [data-theme="dark"] {
+          --primary-color: rgb(0, 0, 0);
+          --secondary-color: rgb(39, 37, 37);
+          --bg-color: rgb(0, 0, 0);
+          --font-color: rgb(126, 218, 211);
+          --heading-color: rgb(203, 200, 50);
+          }  
+          
