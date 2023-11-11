@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <head><title>Webpage</title>
         <link rel="stylesheet" href="base.css">
+    <!-- functions for buttons -->
         <script>
             function hideAll() {
                 document.getElementById('image1').style.display = 'none';
@@ -11,38 +12,46 @@
                 document.getElementById('image4').style.display = 'none';
                 document.getElementById('image5').style.display = 'none';
             }
+            //button 1
             function button1() {
                 hideAll();
                 document.getElementById('image1').style.display = 'block';
                 document.getElementById('text').innerText = 'A quantum computer on Caltech. For more information please visit:'
             }
+            //button 2
             function button2() {
                 hideAll();
                 document.getElementById('image2').style.display = 'block';
                 document.getElementById('text').innerText = 'A quantum AI by Zayan Guedim on edgy.app. For more information please visit:'
             }
+            //button 3
             function button3() {
                 hideAll();
                 document.getElementById('image3').style.display = 'block';
                 document.getElementById('text').innerText = 'A quantum bit (qubit) model. For more information please visit:'
             }
+            // button 4
             function button4() {
                 hideAll();
                 document.getElementById('image4').style.display = 'block';
                 document.getElementById('text').innerText = 'An encryption image. For more information please visit:'
             }
+            // button 5
             function button5() {
                 hideAll();
                 document.getElementById('image5').style.display = 'block';
                 document.getElementById('text').innerText = 'Quantum physics on scienceswitch.com. For more information please visit:'
             }
+
         </script>
+        <script src="theme.js" defer></script>
     </head>
     <body>
+
         <header>
             <h1 style="color: rgb(255, 128, 0); font: 2em/2.66 Times New Roman, sans-serif; text-align: center">Quantum computer and some of its uses<h1 style= "text-align: center"></h1>
             <!-- Button to change the theme -->
-            <button onclick="">Toggle Theme</button>
+            <button id="changeTheme">Toggle Theme</button>
             <nav>
                 <ul>
                   <li><a href="#">Home</a></li>
@@ -56,6 +65,7 @@
                 </form>
             </nav>
         </header>
+        <!-- Onclick event-->
         <div>
             <button onclick="button1()">Quantum computer</button>
             <button onclick="button2()">Quantum AI</button>
@@ -98,6 +108,7 @@
                         or how to simply build a computer at home, you can visit the related websites below. Hope it helps you getting more interest in computing!
                     </p>
              </article>
+             <!-- Related info-->
              <aside>
                 <h2 style="color: rgb(203, 134, 50); text-align: left; font: 1.2em/1.2 Times New Roman, sans-serif">Related information</h2>
                 <ul>

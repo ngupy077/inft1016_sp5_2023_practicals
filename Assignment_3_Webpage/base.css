@@ -27,24 +27,26 @@
         border-right: 1px solid black;  
         width: 30px;
     }
-    body {  
-        background: rgb(0, 0, 0) url(image.gif) repeat fixed top left;  
-      }
-     :root 
+    :root 
         [data-theme="light"]{
-          --primary-color: rgb(255, 255, 255);
-          --secondary-color: rgb(201, 191, 191);
-          --bg-color: rgb(255, 255, 255);
-          --font-color: rgb(0,0,0);
-          --heading-color: rgb(0,0,0);
+          --primary-color-light: rgb(255, 255, 255);
+          --secondary-color-light: rgb(201, 191, 191);
+          --bg-color-light: rgb(255, 255, 255);
+          --font-color-light: rgb(0,0,0);
+          --heading-color-light: rgb(0,0,0);
 
           }
   
         [data-theme="dark"] {
-          --primary-color: rgb(0, 0, 0);
-          --secondary-color: rgb(39, 37, 37);
-          --bg-color: rgb(0, 0, 0);
-          --font-color: rgb(126, 218, 211);
-          --heading-color: rgb(203, 200, 50);
+          --primary-color-dark: rgb(0, 0, 0);
+          --secondary-color-dark: rgb(39, 37, 37);
+          --bg-color-dark: rgb(0, 0, 0);
+          --font-color-dark: rgb(126, 218, 211);
+          --heading-color-dark: rgb(203, 200, 50);
           }  
+    body {
+      transition: background-color 0.5s, color 0.5s;
+      color: var(--font-color-light);
+      background-color: var(--bg-color-light);
+    }
           
