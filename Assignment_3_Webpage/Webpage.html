@@ -42,16 +42,30 @@
                 document.getElementById('image5').style.display = 'block';
                 document.getElementById('text').innerText = 'Quantum physics on scienceswitch.com. For more information please visit:'
             }
+            // function to change the theme of the page
+            function changeTheme() {
+                var body = document.body;
+                //checking for the current color of the page
+                var currentColor = window.getComputedStyle(body).backgroundColor;
+                //changing the color of the page 
+                if (currentColor === 'rgb(0,0,0)') {
+                    body.style.backgroundColor = 'white';
+                    body.style.color = 'black';
+                    } 
+                else {
+                    body.style.backgroundColor = 'black';
+                    body.style.color = 'white';
+                }
 
+
+            }
         </script>
-        <script src="theme.js" defer></script>
     </head>
     <body>
-
         <header>
             <h1 style="color: rgb(255, 128, 0); font: 2em/2.66 Times New Roman, sans-serif; text-align: center">Quantum computer and some of its uses<h1 style= "text-align: center"></h1>
             <!-- Button to change the theme -->
-            <button id="changeTheme">Toggle Theme</button>
+            <button onclick="changeTheme()">Toggle Theme</button>
             <nav>
                 <ul>
                   <li><a href="#">Home</a></li>
